@@ -1,0 +1,15 @@
+Estos son los comandos utilizados en la practica de configuracion de red:
+
+Ifconfig, 
+ifconfig eth0,
+dhclient -v,
+ip addr add 192.168.100.2/24 dev eth0
+ip addr del 192.168.100.2/24 dev eth0c
+route
+ip route add default via 192.168.100.1
+ip route del default via 192.168.100.1
+ping 8.8.8.8
+ping 8.8.4.4
+ping google.com
+cat /etc/resolv.conf
+nano /etc/resolv.conf
