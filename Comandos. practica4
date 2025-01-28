@@ -1,0 +1,14 @@
+Comandos gestión de permisos de archivos:
+
+Mkdir materia 
+Touch
+Vi
+Chmod u+rwx estudiante.txt
+Chmod g+rwx estudiante.txt
+Cd
+Cd ..
+Ls -l
+ls
+cp materia/archivo.txt materia2/
+rm archivo.txt
+rm -r nombre_del_directorio
