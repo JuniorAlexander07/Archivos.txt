@@ -1,14 +1,25 @@
 Comandos gestion de usuarios y grupos:
 
 sudo usermod -aG sudo nombre_usuario
-cd ..
-ls
+
+para ver los usuarios existentes:
+ls /home
+
+para entrar como el usuario:
 su nombre usuario 
+
 sudo su
-sudo adduser 
-deluser
+sudo adduser (nombre de usuario)
+sudo deluser (nombre de usuario)
+
+eliminar el usuario del grupo de sudo:
 sudo gpasswd -d nombre_usuario sudo
-sudo addgroup
-sudo delgroup
-sudo rm -r
-id 
+
+sudo addgroup nombre de grupo
+sudo delgroup nombre de grupo
+
+para borrar la carpeta que deja el usuario en home
+sudo rm -r 
+
+para ver a que grupo pertenece el usuario:
+id nombre de usuario
