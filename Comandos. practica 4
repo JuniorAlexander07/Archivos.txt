@@ -1,14 +1,54 @@
 Comandos gestión de permisos de archivos:
 
-Mkdir materia 
-Touch
-Vi
+Crear directorio
+mkdir materia 
+ls
+
+Entramos al directorio y creamos un archivo
+cd materia 
+touch estudiante.txt
+
+Vamos a editar y poner cualquier cosa
+sudo nano estudiante.txt
+
+guardamos y salimos
+
+para ver los permisos del archivo
+ls -l
+
+ahora vamos a darle permisos al archivo
 Chmod u+rwx estudiante.txt
 Chmod g+rwx estudiante.txt
-Cd
-Cd ..
-Ls -l
-ls
+Chmod o+rwx estudiante.txt
+
+Ahora vamos a verificar si se cambio los permisos
+ls-l
+
+para quitar los permisos usamos:
+chmod u-rwx estudiante.txt
+chmod g-rwx estudiante.txt
+chmod o-rwx estudiante.txt
+
+forma numérica
+quitar todos los permisos
+chmod 000 estudiante.txt
+chmod 600 estudiante.txt   para el usuario
+chmod 060 estudiante.txt   grupos
+chmod 006 estudiante.txt  otros
+
+Número	Permiso (rwx)	Significado
+0	---	Sin permisos
+1	--x	Solo ejecución
+2	-w-	Solo escritura
+3	-wx	Escritura y ejecución
+4	r--	Solo lectura
+5	r-x	Lectura y ejecución
+6	rw-	Lectura y escritura
+7	rwx	Lectura, escritura y ejecución (todos los permisos)
+
+esto es para copiar un archivo y mandarlo a otro directorio
 cp materia/archivo.txt materia2/
+
+para borrar archivos y directorios
 rm archivo.txt
-rm -r nombre_del_directorio
+sudo rm -r nombre_del_directorio
